@@ -1047,6 +1047,7 @@ main {
 
 .project-item {
   display: none;
+  pointer-events: none;
 }
 
 .project-item.active {
@@ -1952,6 +1953,7 @@ textarea.form-input::-webkit-resizer {
     border-radius: 0 20px;
     padding: 0 20px;
     box-shadow: none;
+    border: none;
   }
 
   .navbar-list {
@@ -2158,6 +2160,23 @@ textarea.form-input::-webkit-resizer {
 
   .timeline-text {
     max-width: 700px;
+  }
+
+}
+
+/**
+ * responsive smaller than 1024px screen
+ */
+
+@media (max-width: 1024px) {
+
+  .navbar-link {
+    font-size: var(--fs-2);
+    padding: 12px 7px;
+  }
+
+  .sidebar {
+    max-height: 126px;
   }
 
 }
